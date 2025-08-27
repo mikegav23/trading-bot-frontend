@@ -18,7 +18,7 @@ export default function UserDropdown() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="h-auto p-0 hover:bg-transparent rounded-full"
+          className="h-auto p-0 hover:bg-transparent rounded-full cursor-pointer"
         >
           <Avatar>
             <AvatarImage
