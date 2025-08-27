@@ -10,36 +10,28 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/components/sidebar";
+} from "@/src/components/sidebar";
 
-const basePath = "https://raw.githubusercontent.com/origin-space/origin-images/refs/heads/main/exp4/";
+const basePath =
+  "https://raw.githubusercontent.com/origin-space/origin-images/refs/heads/main/exp4/";
 
 // This is sample data
 const navigationItems = [
   {
     title: "ArkFi",
     url: "#",
-    icon: [
-      "coin-01-light_mfrp33.svg",
-      "coin-01-dark_k0xthz.svg",
-    ],
+    icon: ["coin-01-light_mfrp33.svg", "coin-01-dark_k0xthz.svg"],
     isActive: true,
   },
   {
     title: "Solaris",
     url: "#",
-    icon: [
-      "coin-02-light_wbsrxl.svg",
-      "coin-02-dark_l7j3yv.svg",
-    ],
+    icon: ["coin-02-light_wbsrxl.svg", "coin-02-dark_l7j3yv.svg"],
   },
   {
     title: "Nexus",
     url: "#",
-    icon: [
-      "coin-03-light_dvkbrk.svg",
-      "coin-03-dark_htjbyp.svg",
-    ],
+    icon: ["coin-03-light_dvkbrk.svg", "coin-03-dark_htjbyp.svg"],
   },
 ];
 

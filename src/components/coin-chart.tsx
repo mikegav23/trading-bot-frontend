@@ -10,14 +10,19 @@ import {
   YAxis,
 } from "recharts";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/src/components/card";
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/components/chart";
-import { RadioGroup, RadioGroupItem } from "@/components/radio-group";
+} from "@/src/components/chart";
+import { RadioGroup, RadioGroupItem } from "@/src/components/radio-group";
 
 const hourlyData = [
   { date: "2025-03-12", time: "3:00 PM", value: 1181008 },
@@ -464,14 +469,18 @@ export function CoinChart() {
               domain={["dataMin - 1000", "dataMax + 1000"]}
               tickFormatter={(value) => {
                 if (value === 0) return "$0.00";
-                return `$${(value / 1000).toLocaleString("en-US", { maximumFractionDigits: 2 })}k`;
+                return `$${(value / 1000).toLocaleString("en-US", {
+                  maximumFractionDigits: 2,
+                })}k`;
               }}
             />
             <ChartTooltip
               content={<ChartTooltipContent hideIndicator />}
               cursor={<CustomCursor fill="var(--chart-1)" />}
               formatter={(value) =>
-                `$${Number(value).toLocaleString("en-US", { maximumFractionDigits: 2 })}`
+                `$${Number(value).toLocaleString("en-US", {
+                  maximumFractionDigits: 2,
+                })}`
               }
             />
             <Line

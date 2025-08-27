@@ -1,18 +1,23 @@
 "use client";
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/tabs";
-import { Button } from "@/components/button";
-import { Card } from "@/components/card";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/src/components/tabs";
+import { Button } from "@/src/components/button";
+import { Card } from "@/src/components/card";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/select";
+} from "@/src/components/select";
 import { RiSettings4Line, RiArrowDownLine } from "@remixicon/react";
 import { I18nProvider, Input, Label, NumberField } from "react-aria-components";
-import { cn } from "@/lib/utils";
+import { cn } from "@/src/lib/utils";
 
 interface ConverterFieldProps {
   className?: string;
@@ -51,7 +56,7 @@ function ConverterField({
           isLast
             ? "[mask-image:radial-gradient(ellipse_26px_24px_at_50%_0%,transparent_0,_transparent_24px,_black_25px)]"
             : "[mask-image:radial-gradient(ellipse_26px_24px_at_50%_100%,transparent_0,_transparent_24px,_black_25px)]",
-          className,
+          className
         )}
       >
         {isLast && (

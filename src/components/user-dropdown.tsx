@@ -1,5 +1,5 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/avatar";
-import { Button } from "@/components/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/src/components/avatar";
+import { Button } from "@/src/components/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -8,7 +8,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/dropdown-menu";
+} from "@/src/components/dropdown-menu";
 
 import { RiGlobalLine, RiWalletLine, RiLogoutBoxLine } from "@remixicon/react";
 

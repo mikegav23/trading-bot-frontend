@@ -5,15 +5,15 @@ export const metadata: Metadata = {
 };
 
 import { useId } from "react";
-import { AppSidebar } from "@/components/app-sidebar";
-import { SidebarInset, SidebarProvider } from "@/components/sidebar";
-import { Input } from "@/components/input";
-import UserDropdown from "@/components/user-dropdown";
+import { AppSidebar } from "@/src/components/app-sidebar";
+import { SidebarInset, SidebarProvider } from "@/src/components/sidebar";
+import { Input } from "@/src/components/input";
+import UserDropdown from "@/src/components/user-dropdown";
 import { RiSearch2Line } from "@remixicon/react";
-import ThemeToggle from "@/components/theme-toggle";
-import { Converter } from "@/components/converter";
-import { CoinChart } from "@/components/coin-chart";
-import { TransactionsTable } from "@/components/transactions-table";
+import ThemeToggle from "@/src/components/theme-toggle";
+import { Converter } from "@/src/components/converter";
+import { CoinChart } from "@/src/components/coin-chart";
+import { TransactionsTable } from "@/src/components/transactions-table";
 
 export default function Page() {
   const id = useId();
